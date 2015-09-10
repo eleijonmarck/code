@@ -1,0 +1,11 @@
+# write what comes out of pip freeze into this file
+
+# commands to run the commadnlien
+
+$ brew install pip
+$ pip install python virtualenv virtualenvwrapper
+
+
+
+
+use pdb for DEBUGGING
