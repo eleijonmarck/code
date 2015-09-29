@@ -4,6 +4,8 @@
 import sys
 import unittest as ut
 
+# hallå allii
+
 # --- Locally installed modules -----------------------------------------
 # --- Program internal modules -------------------------------------------
 # ------------------------------------------------------------------------
