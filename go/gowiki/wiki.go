@@ -28,6 +28,14 @@ func loadPage(title string) (*Page, error) {
 
 ///////////////////////////////////////////////////////
 
+func mainHandler(w http.ResponseWriter, r *http.Request) {
+	title := r.URL.Path[len("/"):]
+	p, _ := loadPage(title)
+	fmt.Fprintf(w, "index.html", p.Title, p.Body)
+}
+
+///////////////////////////////////////////////////////
+
 func viewHandler(w http.ResponseWriter, r *http.Request) {
 	title := r.URL.Path[len("/view/"):]
 	p, _ := loadPage(title)
@@ -53,8 +61,11 @@ func editHandler(w http.ResponseWriter, r *http.Request) {
 ///////////////////////////////////////////////////////
 
 func main() {
+	http.HandleFunc("/", viewHandler)
 	http.HandleFunc("/view/", viewHandler)
 	http.HandleFunc("/edit/", editHandler)
 	//	http.HandleFunc("/save/", saveHandler)
-	http.ListenAndServe(":8080", nil)
+  host := ":8080"
+  fmt.Println("Running on localhost", host)
+	http.ListenAndServe(host, nil)
 }
