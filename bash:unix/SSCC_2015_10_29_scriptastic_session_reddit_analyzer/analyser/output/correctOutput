@@ -1,0 +1,4 @@
+catperson1,[mostactiveSubreddit,secondmostactiveSubreddit],10:20,[38,62]
+catperson2,[mostactiveSubreddit,secondmostactiveSubreddit],10:20,[38,62]
+catperson3,[mostactiveSubreddit,secondmostactiveSubreddit],10:20,[38,62]
+[catperson:catperson2:catperson3],10:20,[mostPrevalentSubreddit,secondPrevalentSubreddit]

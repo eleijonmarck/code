@@ -1,0 +1,4 @@
+Alice:0,20: 09 12, 23 4, 10 4, 09 12, 23 4, 10 4, 09 12, 23 4, 10 4, 09 12, 23 4, 10 4, 09 12,: samplesubreddit 20,: Alice 20, bob 0, catperson 0, joe 0,
+bob:4,0: 09 4,: shomething 4,: Alice 0, bob 4, catperson 0, joe 0,
+foo:0,0::: Alice 0, bob 0, catperson 0, joe 0,
+joe:4,16: 09 16, 22 4, 09 16, 22 4, 09 16, 22 4, 09 16, 22 4,: samplesubreddit 16, othersubreddit 4, samplesubreddit 16, othersubreddit 4, samplesubreddit 16, othersubreddit 4, samplesubreddit 16, othersubreddit 4, samplesubreddit 16,: Alice 0, bob 0, catperson 0, joe 20,
