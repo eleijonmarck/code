@@ -1,18 +1,10 @@
-import numpy as np
+#!/usr/bin/python
 
 def main(word):
 	
 	def invertWord(word):
 
-		letterList = []
-		for letter in word:
-			
-			letterList.append(letter)
-
-		letterList.reverse()
-		invertedWord = ''.join(letterList)
-
-		print invertedWord
+                invertedWord = word.reverse()
 		return invertedWord
 	return	invertWord(word)
 
