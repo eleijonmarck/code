@@ -1,12 +1,11 @@
 require(xlsx)
-
-q <- read.xlsx("~/Downloads/beer-survey-20150827 (1).xlsx", sheetIndex = 1, startRow = 3)
+q <- read.xlsx("beerdata.xlsx", sheetIndex = 1, startRow = 3)
 
 q$Date <- NULL
 q$Voter <- NULL
 q$Session <- NULL
 
-colnames(q) <- c("Age", "City", "Gender", "Prog", "Wear", "Beer")
+colnames(q) <- c("Age", "City", "Gender", "Prog", "Beer")
 levels(q$Beer) <- c("Ale", "Lager", "Stout", "Veteöl")
 
 xtabs(~Beer+Gender, q)
