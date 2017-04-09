@@ -25,8 +25,6 @@ def find_bathroom_code():
 
 
 def create_keypad_grid():
-    grid_matrix = np.matrix([[1,2,3],[4,5,6],[7,8,9]])
-    lol_grid = [[1,2,3],[4,5,6],[7,8,9]]
     return lol_grid
 
 def read_the_bathroom_codes():
